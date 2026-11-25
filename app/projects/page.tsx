@@ -1,47 +1,23 @@
-export const metadata = {
-  title: "Projects | Rara Reserva",
-};
+export const metadata = { title: "About | Rara Reserva", description: 
+  "Learn more about me" };
+  const projects = [
+    { id: 1, name: "LOANS", description: "An online shopping website built with React and Node.js" },
+    { id: 2, name: "Online booking system", description: "A personal portfolio website built with Next.js and Tailwind CSS" },
+    { id: 3, name: "BLOG WEBSITE", description: "A blog website built with Gatsby and GraphQL" },
+  ]
 
-const projects = [
-  {
-    id: 1,
-    name: "Student Task Tracker",
-    description: "A simple web app for organizing assignments and deadlines.",
-  },
-  {
-    id: 2,
-    name: "Campus Event Board",
-    description: "A project that displays upcoming activities for students.",
-  },
-  {
-    id: 3,
-    name: "Personal Budget Planner",
-    description: "A small budgeting tool for recording income and expenses.",
-  },
-];
-
-export default function ProjectsPage() {
+export default function AboutPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
-      <h1 className="text-4xl font-bold tracking-tight text-slate-950">
-        Projects
-      </h1>
-
-      <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <li
-            key={project.id}
-            className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm"
-          >
-            <h2 className="text-xl font-semibold text-slate-900">
-              {project.name}
-            </h2>
-            <p className="mt-3 leading-7 text-slate-700">
-              {project.description}
-            </p>
-          </li>
-        ))}
-      </ul>
+      <h1 className="text-4xl font-bold tracking-tight text-slate-950">About</h1>
+      <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+        My name is Rara Reserva. I am a third-year BSIT student who enjoys
+        learning programming and developing websites.
+      </p>
+      <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-700">
+        I want to keep improving my technical skills and build projects that
+        solve practical problems.
+      </p>
     </main>
   );
 }

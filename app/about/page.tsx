@@ -1,3 +1,11 @@
+export const metadata = { title: "Projects | Rara Reserva", description: 
+  "Learn more about me" };
+  const projects = [
+    { id: 1, name: "LOANS", description: "An online shopping website built with React and Node.js" },
+    { id: 2, name: "Online booking system", description: "A personal portfolio website built with Next.js and Tailwind CSS" },
+    { id: 3, name: "BLOG WEBSITE", description: "A blog website built with Gatsby and GraphQL" },
+  ]
+
 export default function AboutPage() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
